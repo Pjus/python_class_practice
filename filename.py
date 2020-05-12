@@ -14,3 +14,14 @@ class Point():
         self.y = y
     def innerPrint(self, infor):
         print(infor, self.x, self.y)
+
+
+class Employee():
+    def __init__(self, Name=None, Salary=None):
+        self.name = Name
+        self.salary = Salary
+    def weeklySalary(self, name, Dailywage, Weekly):
+        self.name = name
+        self.daily = Dailywage
+        self.week = Weekly
+        return print('Name : {}, Salary : {}'.format(self.name, self.daily * self.week))

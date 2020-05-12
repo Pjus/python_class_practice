@@ -13,10 +13,17 @@ import filename
 # print(filename.classname.__init__(a,'Holy'))
 
 
-pt1 = filename.Point()
-print(pt1.x, pt1.y)
+# pt1 = filename.Point()
+# print(pt1.x, pt1.y)
 
-pt2 = filename.Point(3, 5)
-print(pt2.x, pt2.y)
+# pt2 = filename.Point(3, 5)
+# print(pt2.x, pt2.y)
 
-pt2.innerPrint('dsdsd :')
+# pt2.innerPrint('dsdsd :')
+
+emp1 = filename.Employee('Zara', 2000)
+print(emp1.name, emp1.salary)
+
+
+emp2 = filename.Employee()
+emp2.weeklySalary('Zara', 200, 5)
