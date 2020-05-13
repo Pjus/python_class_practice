@@ -31,9 +31,8 @@ class predict4():
     def getPredict(self, x1, x2):
         self.x1 = x1
         self.x2 = x2
-        self.y = self.x2*3
-        if self.y > 10:
-            self.y = self.y - 0.5
+        if self.x2 > 3:
+            self.y = self.x1 * 0 + self.x2 * 3
         else:
-            self.y
+            self.y = self.x1 * 0.25 + self.x2 * 2.75
         print('Predict Result :', self.y)

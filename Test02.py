@@ -1,4 +1,4 @@
-import myClass.filename as my
+import packages.filename as my
 
 # # Jane, Jane + fff
 # a = my.Classname()
@@ -52,9 +52,20 @@ import pickle
 # favorite_color_load = pickle.load( open( "save.pkl", "rb" ) )
 # print(favorite_color_load)
 
-emp1 = my.Employee1('Zara', 200)
+# emp1 = my.Employee1('Zara', 200)
 # emp1.displayEmployee()
 
 # pickle.dump(emp1, open('./emp1.pkl', 'wb'))
-emp_pkl = pickle.load(open('./emp1.pkl', 'rb'))
-emp_pkl.displayEmployee()
+# emp_pkl = pickle.load(open('./emp1.pkl', 'rb'))
+# emp_pkl.displayEmployee()
+
+
+# import matplotlib.pyplot as plt
+# import numpy as np
+
+# x = np.linspace(0, 20, 100)  # Create a list of evenly-spaced numbers over the range
+# plt.plot(x, np.sin(x))       # Plot the sine of each x point
+# plt.show()                   # Display the plot
+
+
+
