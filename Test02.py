@@ -21,7 +21,15 @@ import filename
 
 # pt2.innerPrint('dsdsd :')
 
-emp1 = filename.Employee('Zara', 2000)
-print(emp1.name, emp1.salary)
+# emp1 = filename.Employee('Zara', 2000)
+# print(emp1.name, emp1.salary)
 
-emp1.weeklySalary('PARK', 200, 5)
+# emp1.weeklySalary('PARK', 200, 5)
+
+
+# emp2 = filename.employee1('Zara', 5000)
+# emp2.displayCount()
+
+# emp3 = filename.employee1('Sara', 8000)
+# emp4 = filename.employee1('Sara', 8000)
+# emp4.displayCount()

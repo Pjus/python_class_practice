@@ -25,3 +25,13 @@ class Employee:
         self.daily = Dailywage
         self.week = Weekly
         return print('Name : {}, Salary : {}'.format(self.name, self.daily * self.week))
+
+class employee1:
+    empCount = 0
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+        employee1.empCount += 1
+    def displayCount(self):
+        return print('Total Employee :',employee1.empCount)
+    
