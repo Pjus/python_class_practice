@@ -110,7 +110,7 @@ if __name__ == '__main__':
 
     data = bt.feeds.YahooFinanceCSVData(dataname='./backtrader/AAPL.csv')
     cerebro.adddata(data)
-    cerebro.addstrategy(MyStrategy)
+    cerebro.addstrategy(SmaCross)
 
     print('Starting Portfolio Value: %.2f' % cerebro.broker.getvalue())
     cerebro.run()
