@@ -34,4 +34,36 @@ class Employee1:
         Employee1.empCount += 1
     def displayCount(self):
         return print('Total Employee :', Employee1.empCount)
+    def displayEmployee(self):
+        return print('Name :', self.name, 'Salary :', self.salary)
     
+class NamedList(list):
+    def __init__(self, a_name):
+        list.__init__([])
+        self.name = a_name
+        self.dob = None
+
+class Country():
+    name = '국가명'
+    population = '인구'
+    capital = '수도'
+
+    def show(self):
+        print('국가 클래스의 메소드 입니다.')
+
+
+class Korea(Country):
+    def __init__(self, name, population, capital):
+        self.name = name
+        self.population = population
+        self.capital = capital
+    def showName(self):
+        print('Country Name is', self.name)
+
+
+# k = Korea('korea', '5000', 'seoul')
+# k.showName()
+# k.show()
+
+
+
