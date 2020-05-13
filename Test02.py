@@ -1,4 +1,4 @@
-import filename
+import myClass.filename
 
 # # Jane, Jane + fff
 # a = filename.Classname()
@@ -30,6 +30,6 @@ import filename
 # emp2 = filename.Employee1('Zara', 5000)
 # emp2.displayCount()
 
-# emp3 = filename.Employee1('Sara', 8000)
-# emp4 = filename.Employee1('Sara', 8000)
-# emp4.displayCount()
+emp3 = filename.Employee1('Sara', 8000)
+emp4 = filename.Employee1('Sara', 8000)
+emp4.displayCount()

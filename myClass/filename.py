@@ -31,7 +31,7 @@ class Employee1:
     def __init__(self, name, salary):
         self.name = name
         self.salary = salary
-        employee1.empCount += 1
+        Employee1.empCount += 1
     def displayCount(self):
-        return print('Total Employee :',employee1.empCount)
+        return print('Total Employee :', Employee1.empCount)
     
