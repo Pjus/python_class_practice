@@ -24,6 +24,4 @@ import filename
 emp1 = filename.Employee('Zara', 2000)
 print(emp1.name, emp1.salary)
 
-
-emp2 = filename.Employee()
-emp2.weeklySalary('Zara', 200, 5)
+emp1.weeklySalary('PARK', 200, 5)

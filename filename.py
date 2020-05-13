@@ -1,4 +1,4 @@
-class classname():
+class classname:
     def __init__(self, value = 'Jane'):
         self.thing = value
         self.thing2 = value + ' fff'
@@ -8,7 +8,7 @@ class classname():
         return self.thing2
 
 
-class Point():
+class Point:
     def __init__(self, x=0, y=0):
         self.x = x
         self.y = y
@@ -16,7 +16,7 @@ class Point():
         print(infor, self.x, self.y)
 
 
-class Employee():
+class Employee:
     def __init__(self, Name=None, Salary=None):
         self.name = Name
         self.salary = Salary
