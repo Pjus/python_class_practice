@@ -1,16 +1,16 @@
 import filename
 
 # # Jane, Jane + fff
-# a = filename.classname()
+# a = filename.Classname()
 # print(a.func1()) 
 # print(a.func2())
 
 # # Holy
-# b = filename.classname('Holy')
+# b = filename.Classname('Holy')
 # print(b.func1())
 
 # # None
-# print(filename.classname.__init__(a,'Holy'))
+# print(filename.Classname.__init__(a,'Holy'))
 
 
 # pt1 = filename.Point()
@@ -27,9 +27,9 @@ import filename
 # emp1.weeklySalary('PARK', 200, 5)
 
 
-# emp2 = filename.employee1('Zara', 5000)
+# emp2 = filename.Employee1('Zara', 5000)
 # emp2.displayCount()
 
-# emp3 = filename.employee1('Sara', 8000)
-# emp4 = filename.employee1('Sara', 8000)
+# emp3 = filename.Employee1('Sara', 8000)
+# emp4 = filename.Employee1('Sara', 8000)
 # emp4.displayCount()

@@ -1,4 +1,4 @@
-class classname:
+class Classname:
     def __init__(self, value = 'Jane'):
         self.thing = value
         self.thing2 = value + ' fff'
@@ -26,7 +26,7 @@ class Employee:
         self.week = Weekly
         return print('Name : {}, Salary : {}'.format(self.name, self.daily * self.week))
 
-class employee1:
+class Employee1:
     empCount = 0
     def __init__(self, name, salary):
         self.name = name
