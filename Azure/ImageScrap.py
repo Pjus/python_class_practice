@@ -13,14 +13,15 @@ from urllib3.exceptions import InsecureRequestWarning
 
 import datetime
 import time
+import sys
 
 urllib3.disable_warnings(InsecureRequestWarning)
 
-searchword1 = '보리'
+searchword1 = '옥수수'
 searchword2 = ''
 searchword3 = ''
 searchurl = 'https://www.google.com/search?q=' + searchword1 + '+' + searchword2 + '+' + searchword3 + '&source=lnms&tbm=isch'
-dirs = 'pictures' 
+dirs = searchword1 
 maxcount = 1000
 
 chromedriver = 'D:/python_class_practice/chromedriver/chromedriver.exe'
@@ -51,17 +52,19 @@ def download_google_staticimages():
 
     # Scroll down
     #for i in range(30):
-    for i in range(50):
+    scroll_times = 2
+    except_scroll_times = 2
+    for i in range(scroll_times):
         element.send_keys(Keys.PAGE_DOWN)
         time.sleep(0.3)
 
     try:
         browser.find_element_by_id('smb').click()
-        for i in range(50):
+        for i in range(scroll_times):
             element.send_keys(Keys.PAGE_DOWN)
             time.sleep(0.3)
     except:
-        for i in range(10):
+        for i in range(except_scroll_times):
             element.send_keys(Keys.PAGE_DOWN)
             time.sleep(0.3)
 
@@ -71,20 +74,23 @@ def download_google_staticimages():
     time.sleep(0.5)
 
     # Below is in japanese "show more result" sentences. Change this word to your lanaguage if you require.
-    browser.find_element_by_xpath('//input[@value="결과 더보기"]').click()
+    try:
+        browser.find_element_by_xpath('//input[@value="결과 더보기"]').click()
+    except:
+        pass
 
     # Scroll down 2
-    for i in range(50):
+    for i in range(scroll_times):
         element.send_keys(Keys.PAGE_DOWN)
         time.sleep(0.3)
 
     try:
         browser.find_element_by_id('smb').click()
-        for i in range(50):
+        for i in range(scroll_times):
             element.send_keys(Keys.PAGE_DOWN)
             time.sleep(0.3)
     except:
-        for i in range(10):
+        for i in range(except_scroll_times):
             element.send_keys(Keys.PAGE_DOWN)
             time.sleep(0.3)
 
@@ -116,7 +122,7 @@ def download_google_staticimages():
             try:
                 res = requests.get(url, verify=False, stream=True)
                 rawdata = res.raw.read()
-                with open(os.path.join(dirs, 'img_' + str(count) + '.jpg'), 'wb') as f:
+                with open(os.path.join(dirs, 'img_' + str(count) + '.png'), 'wb') as f:
                     f.write(rawdata)
                     count += 1
             except Exception as e:

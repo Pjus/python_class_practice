@@ -1,0 +1,1 @@
+dirs = x if len(x) > 1
