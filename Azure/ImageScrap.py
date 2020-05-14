@@ -17,7 +17,7 @@ import sys
 
 urllib3.disable_warnings(InsecureRequestWarning)
 
-searchword1 = '옥수수'
+searchword1 = '강아지풀'
 searchword2 = ''
 searchword3 = ''
 searchurl = 'https://www.google.com/search?q=' + searchword1 + '+' + searchword2 + '+' + searchword3 + '&source=lnms&tbm=isch'
@@ -27,7 +27,7 @@ maxcount = 1000
 chromedriver = 'D:/python_class_practice/chromedriver/chromedriver.exe'
 
 if not os.path.exists(dirs):
-    os.mkdir(dirs)
+    os.mkdir('./Azure' + dirs)
 
 def download_google_staticimages():
 
